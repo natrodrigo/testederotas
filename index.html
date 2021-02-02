@@ -6,10 +6,20 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
     <script>
+        let a = 0;
         function show(){
-            document.getElementById("hdiv").style.display = "block";
-        }
+            if (a == 0){
+                document.getElementById("hdiv").style.display = "block";
+                a = 1;
+            }
+        
+            else{
+                document.getElementById("hdiv").style.display = "none";
+                a = 0;
+            } 
+        } 
     </script>
+
 </head>
 <body>
     <button onClick="show()">Show</button>
